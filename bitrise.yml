@@ -8,13 +8,17 @@ app:
     - BITRISE_STEP_GIT_CLONE_URL: "https://github.com/nitro-build/bitrise-step-nitro-ios.git"
 meta:
   bitrise.io:
-    stack: linux-docker-android-20.04
+    stack: osx-xcode-13.4.x
 workflows:
   release:
     steps:
       - activate-ssh-key@4:
           run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
       - git-clone@6: {}
+      - brew-install@0:
+          title: Setup deps (OSX) - Install brew dependencies
+          inputs:
+            - packages: gnu-sed
       - nvm@1:
           run_if: .IsCI
           inputs:

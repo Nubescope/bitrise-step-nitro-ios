@@ -18,19 +18,19 @@ yarn
 default_config_path="$NITRO_CLI_TMP_DIR/src/config/default.ts"
 
 if [[ -n ${NITRO_API_HOST} ]]; then
-  sed -i'' 's,\(apiHost:\).*,\1 '\'"$NITRO_API_HOST"\'\\,',g' "$default_config_path"
+  gsed -i'' 's,\(apiHost:\).*,\1 '\'"$NITRO_API_HOST"\'\\,',g' "$default_config_path"
 fi
 if [[ -n ${NITRO_AWS_ACCESS_KEY_ID} ]]; then
-  sed -i'' 's,\(awsS3AccessKeyId:\).*,\1 '\'"$NITRO_AWS_ACCESS_KEY_ID"\'\\,',g' "$default_config_path"
+  gsed -i'' 's,\(awsS3AccessKeyId:\).*,\1 '\'"$NITRO_AWS_ACCESS_KEY_ID"\'\\,',g' "$default_config_path"
 fi
 if [[ -n ${NITRO_AWS_SECRET_ACCESS_KEY} ]]; then
-  sed -i'' 's,\(awsS3SecretAccessKey:\).*,\1 '\'"$NITRO_AWS_SECRET_ACCESS_KEY"\'\\,',g' "$default_config_path"
+  gsed -i'' 's,\(awsS3SecretAccessKey:\).*,\1 '\'"$NITRO_AWS_SECRET_ACCESS_KEY"\'\\,',g' "$default_config_path"
 fi
 if [[ -n ${NITRO_AWS_S3_REGION} ]]; then
-  sed -i'' 's,\(awsS3Region:\).*,\1 '\'"$NITRO_AWS_S3_REGION"\'\\,',g' "$default_config_path"
+  gsed -i'' 's,\(awsS3Region:\).*,\1 '\'"$NITRO_AWS_S3_REGION"\'\\,',g' "$default_config_path"
 fi
 if [[ -n ${NITRO_AWS_S3_BUCKET} ]]; then
-  sed -i'' 's,\(awsS3Bucket:\).*,\1 '\'"$NITRO_AWS_S3_BUCKET"\'\\,',g' "$default_config_path"
+  gsed -i'' 's,\(awsS3Bucket:\).*,\1 '\'"$NITRO_AWS_S3_BUCKET"\'\\,',g' "$default_config_path"
 fi
 
 # Build Nitro cli
