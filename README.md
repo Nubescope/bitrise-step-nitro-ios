@@ -30,8 +30,8 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `ios_xcconfig_path` | The path relative to project root directory where the custom `.xcconfig` file is located |  |  |
 | `version_name` | The version name for the app |  |  |
 | `version_code` | The version code for the app |  |  |
-| `disable_version_name_from_package_json` | By default will get the 'version' field from package.json and set the version name |  | `$NITRO_DISABLE_VERSION_NAME_FROM_PACKAGE_JSON` |
-| `disable_version_code_auto_generation` | By default will generate a timestamp based number and set the version code |  | `NITRO_DISABLE_VERSION_CODE_AUTO_GENERATION` |
+| `disable_version_name_from_package_json` | By default will get the 'version' field from package.json and set the version name |  |  |
+| `disable_version_code_auto_generation` | By default will generate a timestamp based number and set the version code |  |  |
 | `ios_certificate_url` | The url to download and install the certificate |  |  |
 | `ios_certificate_passphrase` | Certificate passphrase | sensitive |  |
 | `ios_codesigning_identity` | Codesigning identity |  |  |

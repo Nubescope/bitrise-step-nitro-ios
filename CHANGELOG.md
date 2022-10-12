@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/1.1.0...1.1.1) (2022-10-12)
+
+
+### Bug Fixes
+
+* remove defaults not required ([526207f](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/526207fd7ff8cab64e9893d665857fd3c24f8741))
+
 # [1.1.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/1.0.0...1.1.0) (2022-10-05)
 
 
