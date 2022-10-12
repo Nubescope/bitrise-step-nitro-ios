@@ -58,7 +58,7 @@ inputs:
       title: "Version code"
       summary: "The version code for the app"
       is_expand: true
-  - disable_version_name_from_package_json: "$NITRO_DISABLE_VERSION_NAME_FROM_PACKAGE_JSON"
+  - disable_version_name_from_package_json:
     opts:
       category: "App Versioning"
       title: "Disable automatic version name configuration"
@@ -67,7 +67,7 @@ inputs:
       value_options:
         - "yes"
         - "no"
-  - disable_version_code_auto_generation: "NITRO_DISABLE_VERSION_CODE_AUTO_GENERATION"
+  - disable_version_code_auto_generation:
     opts:
       category: "App Versioning"
       title: "Disable automatic version code generation"
@@ -93,7 +93,7 @@ inputs:
       is_sensitive: true
   - ios_codesigning_identity:
     opts:
-      category: "Codesigning Identity"
+      category: "App Signing"
       title: "Codesigning identity"
       summary: "Codesigning identity"
       is_expand: true
@@ -107,7 +107,7 @@ inputs:
     opts:
       category: "App Signing"
       title: "Provisioning profile specifier"
-      summary: The name of the provisioning profile when using a single one
+      summary: "The name of the provisioning profile when using a single one"
       is_expand: true
   - ios_team_id:
     opts:
