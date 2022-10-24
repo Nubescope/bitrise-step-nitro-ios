@@ -49,7 +49,7 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `post_build_command` | Run command once build successfully finished (e.g. `yarn publish`) |  |  |
 | `output_directory` | The path to the directory where to place all of Nitro's output files |  | `$BITRISE_DEPLOY_DIR` |
 | `entry_file` | The entry file for bundle generation |  | `$ENTRY_FILE` |
-| `debug` | Enable verbose logs |  | `$NITRO_DEBUG_MODE` |
+| `verbose` | Enable verbose logs |  |  |
 | `fail_safe` | Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps |  | `$NITRO_FAIL_SAFE` |
 </details>
 

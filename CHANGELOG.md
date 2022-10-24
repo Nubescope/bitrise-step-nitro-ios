@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/1.1.2...1.2.0) (2022-10-24)
+
+
+### Features
+
+* add verbose argument ([069d089](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/069d089d7b257bb103e4330ec5ee5055ecbca7db))
+* upgrade nitro version ([b30296c](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/b30296cd136275753d9aaa333b97194d4e973a7f))
+
 ## [1.1.2](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/1.1.1...1.1.2) (2022-10-13)
 
 
