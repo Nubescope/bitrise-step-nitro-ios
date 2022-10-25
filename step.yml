@@ -34,12 +34,12 @@ inputs:
       title: "Root directory"
       summary: "The directory within your project, in which your code is located. Leave this field empty if your code is not located in a subdirectory"
       is_expand: true
-  - ios_scheme:
+  - scheme:
     opts:
       title: "The name of the iOS scheme"
       summary: "The name of the iOS scheme"
       is_expand: true
-  - ios_xcconfig_path:
+  - xcconfig_path:
     opts:
       title: "Path to a custom xcconfig file"
       summary: "The path relative to project root directory where the custom `.xcconfig` file is located"
@@ -78,44 +78,44 @@ inputs:
         - "no"
 
   # App Signing
-  - ios_certificate_url:
+  - certificate_url:
     opts:
       category: "App Signing"
       title: "Certificate url"
       summary: "The url to download and install the certificate"
       is_expand: true
-  - ios_certificate_passphrase:
+  - certificate_passphrase:
     opts:
       category: "App Signing"
       title: "Certificate passphrase"
       summary: "Certificate passphrase"
       is_expand: true
       is_sensitive: true
-  - ios_codesigning_identity:
+  - codesigning_identity:
     opts:
       category: "App Signing"
       title: "Codesigning identity"
       summary: "Codesigning identity"
       is_expand: true
-  - ios_provisioning_profile_urls:
+  - provisioning_profile_urls:
     opts:
       category: "App Signing"
       title: "Provisioning profile urls"
       summary: "A string containing a '|' separated values where provisioning profiles are located e.g. url1|url2|url3"
       is_expand: true
-  - ios_provisioning_profile_specifier:
+  - provisioning_profile_specifier:
     opts:
       category: "App Signing"
       title: "Provisioning profile specifier"
       summary: "The name of the provisioning profile when using a single one"
       is_expand: true
-  - ios_team_id:
+  - team_id:
     opts:
       category: "App Signing"
       title: "Team ID"
       summary: "Specify the Team ID you want to use for the Apple Developer Portal"
       is_expand: true
-  - ios_export_method: "ad-hoc"
+  - export_method: "ad-hoc"
     opts:
       category: "App Signing"
       title: "Export Method"

@@ -44,12 +44,12 @@ if [[ -n ${root_directory} ]]; then
   args+=("--root-directory" "${root_directory}")
 fi
 
-if [[ -n ${ios_scheme} ]]; then
-  args+=("--ios-scheme" "${ios_scheme}")
+if [[ -n ${scheme} ]]; then
+  args+=("--ios-scheme" "${scheme}")
 fi
 
-if [[ -n ${ios_xcconfig_path} ]]; then
-  args+=("--ios-xcconfig-path" "${ios_xcconfig_path}")
+if [[ -n ${xcconfig_path} ]]; then
+  args+=("--ios-xcconfig-path" "${xcconfig_path}")
 fi
 
 # --------------
@@ -78,34 +78,34 @@ fi
 # App Signing
 # -----------
 
-if [[ -n ${ios_certificate_url} ]]; then
-  args+=("--ios-certificate-url" "${ios_certificate_url}")
+if [[ -n ${certificate_url} ]]; then
+  args+=("--ios-certificate-url" "${certificate_url}")
 fi
 
-if [[ -n ${ios_certificate_passphrase} ]]; then
-  args+=("--ios-certificate-passphrase" "${ios_certificate_passphrase}")
+if [[ -n ${certificate_passphrase} ]]; then
+  args+=("--ios-certificate-passphrase" "${certificate_passphrase}")
 fi
 
-if [[ -n ${ios_codesigning_identity} ]]; then
-  args+=("--ios-codesigning-identity" "${ios_codesigning_identity}")
+if [[ -n ${codesigning_identity} ]]; then
+  args+=("--ios-codesigning-identity" "${codesigning_identity}")
 fi
 
-if [[ -n ${ios_provisioning_profile_urls} ]]; then
-  IFS='|' ios_provisioning_profile_urls_value=("${ios_provisioning_profile_urls}")
+if [[ -n ${provisioning_profile_urls} ]]; then
+  IFS='|' provisioning_profile_urls_value=("${provisioning_profile_urls}")
   # shellcheck disable=SC2206
-  args+=("--ios-provisioning-profile-urls" ${ios_provisioning_profile_urls_value[@]})
+  args+=("--ios-provisioning-profile-urls" ${provisioning_profile_urls_value[@]})
 fi
 
-if [[ -n ${ios_provisioning_profile_specifier} ]]; then
-  args+=("--ios-provisioning-profile-specifier" "${ios_provisioning_profile_specifier}")
+if [[ -n ${provisioning_profile_specifier} ]]; then
+  args+=("--ios-provisioning-profile-specifier" "${provisioning_profile_specifier}")
 fi
 
-if [[ -n ${ios_team_id} ]]; then
-  args+=("--ios-team-id" "${ios_team_id}")
+if [[ -n ${team_id} ]]; then
+  args+=("--ios-team-id" "${team_id}")
 fi
 
-if [[ -n ${ios_export_method} ]]; then
-  args+=("--ios-export-method" "${ios_export_method}")
+if [[ -n ${export_method} ]]; then
+  args+=("--ios-export-method" "${export_method}")
 fi
 
 # -------
