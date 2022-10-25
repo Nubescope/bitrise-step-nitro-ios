@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/1.2.0...2.0.0) (2022-10-25)
+
+
+### Features
+
+* improve args ([8179a39](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/8179a398639c669d7734a1ec52e481e1525631e7))
+
+
+### BREAKING CHANGES
+
+* remove ios prefix to the args
+
 # [1.2.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/1.1.2...1.2.0) (2022-10-24)
 
 

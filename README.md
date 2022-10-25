@@ -26,19 +26,19 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | Key | Description | Flags | Default |
 | --- | --- | --- | --- |
 | `root_directory` | The directory within your project, in which your code is located. Leave this field empty if your code is not located in a subdirectory |  | `./` |
-| `ios_scheme` | The name of the iOS scheme |  |  |
-| `ios_xcconfig_path` | The path relative to project root directory where the custom `.xcconfig` file is located |  |  |
+| `scheme` | The name of the iOS scheme |  |  |
+| `xcconfig_path` | The path relative to project root directory where the custom `.xcconfig` file is located |  |  |
 | `version_name` | The version name for the app |  |  |
 | `version_code` | The version code for the app |  |  |
 | `disable_version_name_from_package_json` | By default will get the 'version' field from package.json and set the version name |  |  |
 | `disable_version_code_auto_generation` | By default will generate a timestamp based number and set the version code |  |  |
-| `ios_certificate_url` | The url to download and install the certificate |  |  |
-| `ios_certificate_passphrase` | Certificate passphrase | sensitive |  |
-| `ios_codesigning_identity` | Codesigning identity |  |  |
-| `ios_provisioning_profile_urls` | A string containing a '\|' separated values where provisioning profiles are located e.g. url1\|url2\|url3 |  |  |
-| `ios_provisioning_profile_specifier` | The name of the provisioning profile when using a single one |  |  |
-| `ios_team_id` | Specify the Team ID you want to use for the Apple Developer Portal |  |  |
-| `ios_export_method` | The export method used to generate the IPA |  | `ad-hoc` |
+| `certificate_url` | The url to download and install the certificate |  |  |
+| `certificate_passphrase` | Certificate passphrase | sensitive |  |
+| `codesigning_identity` | Codesigning identity |  |  |
+| `provisioning_profile_urls` | A string containing a '\|' separated values where provisioning profiles are located e.g. url1\|url2\|url3 |  |  |
+| `provisioning_profile_specifier` | The name of the provisioning profile when using a single one |  |  |
+| `team_id` | Specify the Team ID you want to use for the Apple Developer Portal |  |  |
+| `export_method` | The export method used to generate the IPA |  | `ad-hoc` |
 | `cache_provider` | Choose the provider where cache artifacts will be persisted: - `fs`: File system - `s3`: Amazon - Simple Storage Service |  | `s3` |
 | `disable_cache` | When setting this option to `yes` build cache optimizations won't be performed |  | `$NITRO_DISABLE_CACHE` |
 | `cache_env_var_lookup_keys` | A list of `\|` separated values with env variable keys to lookup to determine whether the build should be cached or not |  |  |
