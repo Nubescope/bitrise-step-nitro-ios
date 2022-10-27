@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/2.0.0...3.0.0) (2022-10-27)
+
+
+### Features
+
+* update to the latest nitro version ([d19dae1](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/d19dae151ec3e5a8c467e3c7afbde5fddfae0cfd))
+
+
+### BREAKING CHANGES
+
+* support for api-key and offline license
+
 # [2.0.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/1.2.0...2.0.0) (2022-10-25)
 
 
