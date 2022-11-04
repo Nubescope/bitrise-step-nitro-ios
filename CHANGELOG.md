@@ -1,3 +1,15 @@
+# [4.0.0-beta.1](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/3.0.0...4.0.0-beta.1) (2022-11-04)
+
+
+### Features
+
+* update nitro to the latest version ([fcb2504](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/fcb2504ff489c0323cc33353fcea6d8c162db0bf))
+
+
+### BREAKING CHANGES
+
+* remove ios prefix
+
 # [3.0.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/2.0.0...3.0.0) (2022-10-27)
 
 
