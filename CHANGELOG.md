@@ -1,3 +1,10 @@
+# [4.0.0-beta.2](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.0.0-beta.1...4.0.0-beta.2) (2022-11-04)
+
+
+### Features
+
+* point to the latest nitro version ([2af9e0d](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/2af9e0d22698cf7cd44a26ee4c3513fa41b3803a))
+
 # [4.0.0-beta.1](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/3.0.0...4.0.0-beta.1) (2022-11-04)
 
 
