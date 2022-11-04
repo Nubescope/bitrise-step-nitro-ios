@@ -45,11 +45,11 @@ if [[ -n ${root_directory} ]]; then
 fi
 
 if [[ -n ${scheme} ]]; then
-  args+=("--ios-scheme" "${scheme}")
+  args+=("--scheme" "${scheme}")
 fi
 
 if [[ -n ${xcconfig_path} ]]; then
-  args+=("--ios-xcconfig-path" "${xcconfig_path}")
+  args+=("--xcconfig-path" "${xcconfig_path}")
 fi
 
 # --------------
@@ -79,33 +79,33 @@ fi
 # -----------
 
 if [[ -n ${certificate_url} ]]; then
-  args+=("--ios-certificate-url" "${certificate_url}")
+  args+=("--certificate-url" "${certificate_url}")
 fi
 
 if [[ -n ${certificate_passphrase} ]]; then
-  args+=("--ios-certificate-passphrase" "${certificate_passphrase}")
+  args+=("--certificate-passphrase" "${certificate_passphrase}")
 fi
 
 if [[ -n ${codesigning_identity} ]]; then
-  args+=("--ios-codesigning-identity" "${codesigning_identity}")
+  args+=("--codesigning-identity" "${codesigning_identity}")
 fi
 
 if [[ -n ${provisioning_profile_urls} ]]; then
   IFS='|' provisioning_profile_urls_value=("${provisioning_profile_urls}")
   # shellcheck disable=SC2206
-  args+=("--ios-provisioning-profile-urls" ${provisioning_profile_urls_value[@]})
+  args+=("--provisioning-profile-urls" ${provisioning_profile_urls_value[@]})
 fi
 
 if [[ -n ${provisioning_profile_specifier} ]]; then
-  args+=("--ios-provisioning-profile-specifier" "${provisioning_profile_specifier}")
+  args+=("--provisioning-profile-specifier" "${provisioning_profile_specifier}")
 fi
 
 if [[ -n ${team_id} ]]; then
-  args+=("--ios-team-id" "${team_id}")
+  args+=("--team-id" "${team_id}")
 fi
 
 if [[ -n ${export_method} ]]; then
-  args+=("--ios-export-method" "${export_method}")
+  args+=("--export-method" "${export_method}")
 fi
 
 # -------
