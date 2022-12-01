@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.0.0...4.1.0) (2022-12-01)
+
+
+### Features
+
+* add missing parameter and default values  ([ed97533](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/ed97533a4cdf415ef583b5de2cfd170650e32750))
+
 # [4.0.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/3.0.0...4.0.0) (2022-11-04)
 
 
