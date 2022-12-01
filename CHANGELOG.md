@@ -1,3 +1,15 @@
+# [4.2.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.1.0...4.2.0) (2022-12-01)
+
+
+### Bug Fixes
+
+* change website to Github url ([4c9eff3](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/4c9eff32127ae14d9f05b29ab9c79b74a8936bc4))
+
+
+### Features
+
+* add icon and modify metadata ([049fecf](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/049fecfd6039c7075d3ae8a5fbde3fe5a7daaf54))
+
 # [4.1.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.0.0...4.1.0) (2022-12-01)
 
 

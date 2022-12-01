@@ -1,14 +1,14 @@
-# Nitro build system for iOS
+# Nitro for iOS
 
 [![Step changelog](https://shields.io/github/v/release/nitro-build/bitrise-step-nitro-ios?include_prereleases&label=changelog&color=blueviolet)](https://github.com/nitro-build/bitrise-step-nitro-ios/releases)
 
-Build React Native projects powered by Nitro
+Build your React Native app faster than ever with Nitro
 
 
 <details>
 <summary>Description</summary>
 
-This step allows you to easily run the Nitro builder by providing input parameters in a friendly way
+This step builds your React Native app for iOS using [Nitro](https://nitro.build). Get your **API key** on our [website](https://nitro.build).
 
 </details>
 
