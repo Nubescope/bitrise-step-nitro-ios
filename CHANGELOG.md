@@ -1,3 +1,10 @@
+## [4.2.1](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.2.0...4.2.1) (2022-12-06)
+
+
+### Bug Fixes
+
+* declare missing system dependency ([2f43fc5](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/2f43fc5d8cb86284fdcf7e50471ca900f354cef6))
+
 # [4.2.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.1.0...4.2.0) (2022-12-01)
 
 
