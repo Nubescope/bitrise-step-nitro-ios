@@ -138,6 +138,22 @@ if [[ "${disable_metro_cache}" == "true" || "${disable_metro_cache}" == "yes" ]]
   args+=("--disable-metro-cache")
 fi
 
+if [[ -n ${aws_s3_access_key_id} ]]; then
+  args+=("--aws-s3-access-key-id" "$aws_s3_access_key_id")
+fi
+
+if [[ -n ${aws_s3_secret_access_key} ]]; then
+  args+=("--aws-s3-secret-access-key" "$aws_s3_secret_access_key")
+fi
+
+if [[ -n ${aws_s3_region} ]]; then
+  args+=("--aws-s3-region" "$aws_s3_region")
+fi
+
+if [[ -n ${aws_s3_bucket} ]]; then
+  args+=("--aws-s3-bucket" "$aws_s3_bucket")
+fi
+
 # -----
 # Hooks
 # -----
@@ -154,9 +170,9 @@ if [[ -n ${post_build_command} ]]; then
   args+=("--post-build-command" "${post_build_command}")
 fi
 
-# -----
+# --------
 # Advanced
-# -----
+# --------
 
 if [[ -n ${output_directory} ]]; then
   args+=("--output-directory" "${output_directory}")
