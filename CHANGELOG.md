@@ -1,3 +1,10 @@
+# [4.3.0-beta.1](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.2.1...4.3.0-beta.1) (2022-12-19)
+
+
+### Features
+
+* add arguments to specify custom s3 cache provider config ([8a9cf9d](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/8a9cf9d182dbb02d710c0e5be968c139bfe5660a))
+
 ## [4.2.1](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.2.0...4.2.1) (2022-12-06)
 
 
