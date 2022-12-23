@@ -1,3 +1,10 @@
+# [4.4.0-beta.1](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.3.0...4.4.0-beta.1) (2022-12-23)
+
+
+### Features
+
+* run iOS builds for simulators by default ([2528a3b](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/2528a3b5f9d1e74a4f6d53e082d9fd93a135bb6d))
+
 # [4.3.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.2.1...4.3.0) (2022-12-19)
 
 
