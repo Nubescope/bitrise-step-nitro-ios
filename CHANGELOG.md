@@ -1,3 +1,10 @@
+# [4.4.0-beta.3](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.4.0-beta.2...4.4.0-beta.3) (2022-12-27)
+
+
+### Features
+
+* add detox configuration argument ([4250f88](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/4250f8870eb2a0d98c3090c92121df27e3b769e6))
+
 # [4.4.0-beta.2](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.4.0-beta.1...4.4.0-beta.2) (2022-12-27)
 
 
