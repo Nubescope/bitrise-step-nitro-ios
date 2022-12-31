@@ -1,3 +1,10 @@
+# [4.4.0-beta.6](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.4.0-beta.5...4.4.0-beta.6) (2022-12-31)
+
+
+### Features
+
+* move release script to nitro ([003085b](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/003085b903a27145849c34858dc8ea4aa3a6e6a1))
+
 # [4.4.0-beta.5](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.4.0-beta.4...4.4.0-beta.5) (2022-12-30)
 
 
