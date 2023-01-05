@@ -1,3 +1,10 @@
+# [4.4.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.3.0...4.4.0) (2023-01-05)
+
+
+### Features
+
+* detox + iOS simulator support ([#3](https://github.com/nitro-build/bitrise-step-nitro-ios/issues/3)) ([a86877e](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/a86877eae9ed4c0d2585e8643c0d2fe463e69c31))
+
 # [4.3.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.2.1...4.3.0) (2022-12-19)
 
 ### Features
