@@ -20,7 +20,6 @@ is_skippable: false
 run_if: ""
 deps:
   brew:
-    - name: wget
     - name: pigz
     - name: gnu-sed
     - name: jq
@@ -30,6 +29,12 @@ toolkit:
 
 inputs:
   # Basic configuration
+  - api_key:
+    opts:
+      title: "Nitro API key"
+      summary: "The API key required by Nitro. It is recommended to set a $NITRO_API_KEY as a Bitrise secret."
+      is_expand: true
+      is_sensitive: true
   - root_directory: "./"
     opts:
       title: "Root directory"
@@ -125,6 +130,8 @@ inputs:
       value_options:
         - "ad-hoc"
         - "app-store"
+        - "development"
+        - "enterprise"
 
   # Caching
   - cache_provider: "s3"
@@ -140,11 +147,11 @@ inputs:
       value_options:
         - "fs"
         - "s3"
-  - disable_cache: "$NITRO_DISABLE_CACHE"
+  - disable_cache:
     opts:
       category: "Caching"
       title: "Disable builds caching"
-      summary: "When setting this option to `yes` build cache optimizations won't be performed"
+      summary: "When setting this option to `yes` build cache optimizations won't be performed. (defaults to $NITRO_DISABLE_CACHE if present)"
       is_expand: true
       value_options:
         - "yes"
@@ -163,36 +170,36 @@ inputs:
       summary: "A list of `|` separated value paths (relative to the root of the repo or absolute) to lookup in order to determine whether the build should be cached or not"
       description: "A list of `|` separated value paths (relative to the root of the repo or absolute) to lookup in order to determine whether the build should be cached or not"
       is_expand: true
-  - disable_metro_cache: "$NITRO_DISABLE_METRO_CACHE"
+  - disable_metro_cache:
     opts:
       category: "Caching"
       title: "Disable Metro bundler cache"
-      summary: "Setting this field to `yes` will disable the React Native Metro cache feature"
+      summary: "Setting this field to `yes` will disable the React Native Metro cache feature. (defaults to $NITRO_DISABLE_METRO_CACHE if present)"
       description: "Setting this field to yes will disable the React Native Metro cache feature"
       is_expand: true
-  - aws_s3_access_key_id: "$NITRO_AWS_S3_ACCESS_KEY_ID"
+  - aws_s3_access_key_id:
     opts:
       category: "Caching"
       title: "AWS S3 access key ID"
-      summary: "AWS access key ID for S3 bucket build caching"
+      summary: "AWS access key ID for S3 bucket build caching (defaults to $NITRO_AWS_S3_ACCESS_KEY_ID if present)"
       is_expand: true
-  - aws_s3_secret_access_key: "$NITRO_AWS_S3_SECRET_ACCESS_KEY"
+  - aws_s3_secret_access_key:
     opts:
       category: "Caching"
       title: "AWS S3 secret access key"
-      summary: "AWS secret access key for S3 bucket build caching"
+      summary: "AWS secret access key for S3 bucket build caching (defaults to $NITRO_AWS_S3_SECRET_ACCESS_KEY if present)"
       is_expand: true
-  - aws_s3_region: "$NITRO_AWS_S3_REGION"
+  - aws_s3_region:
     opts:
       category: "Caching"
       title: "AWS S3 region"
-      summary: "AWS region where S3 bucket for build caching is located"
+      summary: "AWS region where S3 bucket for build caching is located (defaults to $NITRO_AWS_S3_REGION if present)"
       is_expand: true
-  - aws_s3_bucket: "$NITRO_AWS_S3_BUCKET"
+  - aws_s3_bucket:
     opts:
       category: "Caching"
       title: "AWS S3 bucket name"
-      summary: "AWS bucket name for S3 bucket build caching"
+      summary: "AWS bucket name for S3 bucket build caching (defaults to $NITRO_AWS_S3_BUCKET if present)"
       is_expand: true
 
   # Hooks
@@ -225,17 +232,17 @@ inputs:
       title: "Detox configuration"
       summary: "Select a device configuration from your defined configurations."
       is_expand: true
-  - output_directory: "$BITRISE_DEPLOY_DIR"
+  - output_directory:
     opts:
       category: "Advanced"
       title: "Output directory"
-      summary: "The path to the directory where to place all of Nitro's output files"
+      summary: "The path to the directory where to place all of Nitro's output files (defaults to $BITRISE_DEPLOY_DIR)"
       is_expand: true
-  - entry_file: "$ENTRY_FILE"
+  - entry_file:
     opts:
       category: "Advanced"
       title: "The entry file for bundle generation"
-      summary: "The entry file for bundle generation"
+      summary: "The entry file for bundle generation (defaults to $ENTRY_FILE if present)"
       is_expand: true
   - verbose: "no"
     opts:
@@ -255,20 +262,12 @@ inputs:
       value_options:
         - "yes"
         - "no"
-  - fail_safe: "$NITRO_FAIL_SAFE"
+  - fail_safe:
     opts:
       category: "Advanced"
       title: "Fail-safe mode"
-      summary: "Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps"
+      summary: "Runing the app in this mode allows you to prevent the build to fail but you can check the status in further steps  (defaults to $NITRO_FAIL_SAFE if present)"
       is_expand: true
-
-  # API key
-  - api_key: "$NITRO_API_KEY"
-    opts:
-      title: "Nitro API key"
-      summary: "The API key provided by Nitro. It should be defined by setting NITRO_API_KEY secret."
-      is_expand: true
-      is_sensitive: true
 
 outputs:
   - NITRO_BUILD_STATUS:
