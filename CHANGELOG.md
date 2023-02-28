@@ -1,3 +1,10 @@
+# [4.6.0-beta.1](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.5.0...4.6.0-beta.1) (2023-02-28)
+
+
+### Features
+
+* upgrade nitro CLI version ([aa612f7](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/aa612f7f6a1f23e9bcf4c37a315e4f3c85cfcaf7))
+
 # [4.5.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.4.1...4.5.0) (2023-01-31)
 
 ### Features
