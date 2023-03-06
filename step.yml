@@ -45,6 +45,11 @@ inputs:
       title: "The name of the iOS scheme"
       summary: "The name of the iOS scheme"
       is_expand: true
+  - build_configuration: "Release"
+    opts:
+      title: "The name of the active build configuration"
+      summary: "The name of the active build configuration"
+      is_expand: true
   - xcconfig_path:
     opts:
       title: "Path to a custom xcconfig file"

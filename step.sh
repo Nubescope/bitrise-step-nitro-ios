@@ -41,6 +41,10 @@ if [[ -n ${xcconfig_path} ]]; then
   args+=("--xcconfig-path" "${xcconfig_path}")
 fi
 
+if [[ -n ${build_configuration} ]]; then
+  args+=("--build-configuration" "${build_configuration}")
+fi
+
 # --------------
 # App Versioning
 # --------------
