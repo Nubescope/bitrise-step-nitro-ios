@@ -28,6 +28,7 @@ You can also run this step directly with [Bitrise CLI](https://github.com/bitris
 | `api_key` | The API key required by Nitro. It is recommended to set a $NITRO_API_KEY as a Bitrise secret. | sensitive |  |
 | `root_directory` | The directory within your project, in which your code is located. Leave this field empty if your code is not located in a subdirectory |  | `./` |
 | `scheme` | The name of the iOS scheme |  |  |
+| `build_configuration` | The name of the active build configuration |  | `Release` |
 | `xcconfig_path` | The path relative to project root directory where the custom `.xcconfig` file is located |  |  |
 | `version_name` | The version name for the app |  |  |
 | `version_code` | The version code for the app |  |  |

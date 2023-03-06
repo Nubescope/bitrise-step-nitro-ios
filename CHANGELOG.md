@@ -1,3 +1,10 @@
+# [4.7.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.6.0...4.7.0) (2023-03-06)
+
+
+### Features
+
+* add missing build configuration for ios ([c945e23](https://github.com/nitro-build/bitrise-step-nitro-ios/commit/c945e233c249e40c97778fce09ba900029fc303e))
+
 # [4.6.0](https://github.com/nitro-build/bitrise-step-nitro-ios/compare/4.5.0...4.6.0) (2023-02-28)
 
 
